@@ -1,5 +1,8 @@
 # Powers of FlowType.js with a React component
 
+### What does it do?
+See http://simplefocus.com/flowtype/.
+
 ### Install latest version
 `npm install --save https://github.com/bond-agency/react-flowtype/tarball/master`
 
