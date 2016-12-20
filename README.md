@@ -4,7 +4,7 @@
 See http://simplefocus.com/flowtype/.
 
 ### Install latest version
-`npm install --save https://github.com/bond-agency/react-flowtype/tarball/v1.0.1`
+`npm install --save https://github.com/bond-agency/react-flowtype/tarball/v1.0.2`
 
 ### Usage
 ```js
