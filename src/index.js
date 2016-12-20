@@ -5,7 +5,9 @@ export default class FlowType extends React.Component {
   componentDidMount () {
     this.updateSettings()
     this.updateWidthFont()
-    window.addEventListener('resize', this.updateWidthFont.bind(this))
+    if (typeof window !== 'undefined') {
+      window.addEventListener('resize', this.updateWidthFont.bind(this))
+    }
   }
 
   componentWillReceiveProps () {
