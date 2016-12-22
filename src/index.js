@@ -2,12 +2,19 @@ import React, {PropTypes} from 'react'
 
 export default class FlowType extends React.Component {
 
+  constructor () {
+    super()
+    this.updateWidthFont = this.updateWidthFont.bind(this)
+  }
+
   componentDidMount () {
     this.updateSettings()
     this.updateWidthFont()
-    if (typeof window !== 'undefined') {
-      window.addEventListener('resize', this.updateWidthFont.bind(this))
-    }
+    window.addEventListener('resize', this.updateWidthFont)
+  }
+
+  componentWillUnmount () {
+    window.removeEventListener('resize', this.updateWidthFont)
   }
 
   componentWillReceiveProps () {
